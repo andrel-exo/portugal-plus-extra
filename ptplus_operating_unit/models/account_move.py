@@ -31,6 +31,5 @@ class AccountMove(models.Model):
             domain.extend([
                 ('operating_unit_id', 'in', (False, operating_unit_id)),
             ])
-        _logger.info("AÍ VAI O DOMÍNIO!!!!!")
         _logger.info(domain)
         return domain
