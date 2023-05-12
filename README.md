@@ -1,2 +1,2 @@
 # ptplus-extra
-Glue modules for 3rd party apps
+Glue modules between ptplus and 3rd party apps
