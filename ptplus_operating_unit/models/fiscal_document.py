@@ -5,8 +5,9 @@ from odoo import fields, models
 
 
 class FiscalDocumentType(models.Model):
-    _inherit = 'fiscal.document.type'
+    _inherit = "fiscal.document.type"
 
     operating_unit_id = fields.Many2one(
-        'operating.unit', 'Operating Unit',
+        "operating.unit",
+        "Operating Unit",
     )
