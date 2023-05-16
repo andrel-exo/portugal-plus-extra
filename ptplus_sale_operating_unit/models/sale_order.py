@@ -8,6 +8,9 @@ class SaleOrder(models.Model):
 
     @api.onchange('operating_unit_id')
     def _onchange_operating_unit(self):
+        # Note that super doesn't have an _ prefix so we don't need
+        # to call it
+        # super(SaleOrder, self).onchange_operating_unit()
         if self.source_billing:
             domain = self._pt_get_fiscal_doc_domain(self.source_billing)
             fiscal_doc = self._pt_get_fiscal_doc_selection(

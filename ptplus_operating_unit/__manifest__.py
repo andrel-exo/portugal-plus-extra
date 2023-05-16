@@ -17,7 +17,8 @@
         "security/security.xml",
         "views/fiscal_document_views.xml",
         "views/account_move_views.xml",
-        "views/account_payment_views.xml"
+        "views/account_payment_views.xml",
+        "wizards/account_payment_register_views.xml",
     ],
     'installable': True,
     "auto_install": True,

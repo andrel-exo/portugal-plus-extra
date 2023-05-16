@@ -11,6 +11,7 @@ class AccountMove(models.Model):
 
     @api.onchange('operating_unit_id')
     def _onchange_operating_unit(self):
+        super(AccountMove, self)._onchange_operating_unit()
         if self.source_billing:
             domain = self._pt_get_fiscal_doc_domain(self.source_billing)
             fiscal_doc = self._pt_get_fiscal_doc_selection(
