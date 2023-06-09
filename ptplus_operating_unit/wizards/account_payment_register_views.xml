@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
+    <!--
     <record id="view_account_payment_register_form_pt_ou" model="ir.ui.view">
         <field name="name">account.payment.register.form.pt.ou</field>
         <field name="model">account.payment.register</field>
@@ -26,5 +27,6 @@
             </field>
         </field>
     </record>
+    -->
 
 </odoo>
