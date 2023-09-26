@@ -41,7 +41,7 @@ class SaleOrder(models.Model):
 
         # If there's a pre-filled operating unit, we need to make sure the
         # journal is compatible with the OU
-        operating_unit_id = invoice_vals.get("operating_unit_id")
+        operating_unit_id = invoice_vals.get("operating_unit_id", False)
         if operating_unit_id:
             jnl = self.env["account.journal"].search(
                 [("type", "=", "sale"), ("operating_unit_id", "=", operating_unit_id)],
@@ -49,3 +49,5 @@ class SaleOrder(models.Model):
             )
             if jnl:
                 invoice_vals["journal_id"] = jnl.id
+
+        return invoice_vals
