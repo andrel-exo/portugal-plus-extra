@@ -35,3 +35,17 @@ class SaleOrder(models.Model):
                 ]
             )
         return domain
+
+    def _prepare_invoice(self):
+        invoice_vals = super(SaleOrder, self)._prepare_invoice()
+
+        # If there's a pre-filled operating unit, we need to make sure the
+        # journal is compatible with the OU
+        operating_unit_id = invoice_vals.get("operating_unit_id")
+        if operating_unit_id:
+            jnl = self.env["account.journal"].search(
+                [("type", "=", "sale"),
+                 ("operating_unit_id", "=", operating_unit_id)
+                 ], limit=1)
+            if jnl:
+                invoice_vals["journal_id"] = jnl.id
