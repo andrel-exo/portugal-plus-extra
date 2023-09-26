@@ -44,8 +44,8 @@ class SaleOrder(models.Model):
         operating_unit_id = invoice_vals.get("operating_unit_id")
         if operating_unit_id:
             jnl = self.env["account.journal"].search(
-                [("type", "=", "sale"),
-                 ("operating_unit_id", "=", operating_unit_id)
-                 ], limit=1)
+                [("type", "=", "sale"), ("operating_unit_id", "=", operating_unit_id)],
+                limit=1,
+            )
             if jnl:
                 invoice_vals["journal_id"] = jnl.id
