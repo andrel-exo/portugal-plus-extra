@@ -1,7 +1,6 @@
 exclude: |
   (?x)
   # NOT INSTALLABLE ADDONS
-  ^ptplus_invoice_grouped_by_picking/|
   # END NOT INSTALLABLE ADDONS
   ^ptplus_operating_unit|
   ^ptplus_sale_operating_unit|
