@@ -4,8 +4,7 @@
 {
     "name": "Portugal - Sales with Operating Units",
     "version": "14.0.4.0.0",
-    "author": "Exo Software, "
-              "Odoo Community Association (OCA)",
+    "author": "Exo Software, " "Odoo Community Association (OCA)",
     "website": "https://exosoftware.pt",
     "license": "LGPL-3",
     "category": "Localization",
@@ -14,8 +13,8 @@
         "sale_operating_unit",
     ],
     "data": [
-        'views/sale_order_views.xml',
+        "views/sale_order_views.xml",
     ],
-    'installable': True,
+    "installable": True,
     "auto_install": True,
 }
