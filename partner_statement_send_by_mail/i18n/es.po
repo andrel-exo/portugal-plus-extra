@@ -1,0 +1,160 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_statement_send_by_mail
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-12 15:54+0000\n"
+"PO-Revision-Date: 2021-09-12 17:11+0100\n"
+"Last-Translator: Pedro Castro Silva <pedrocs@exo.pt>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 3.0\n"
+
+#. module: partner_statement_send_by_mail
+#: model:mail.template,body_html:partner_statement_send_by_mail.email_template_partner_activity_statement
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        Dear ${object.name},\n"
+"        <br/><br/>\n"
+"        Please find attached a balance statement,\n"
+"        dated between ${format_date(ctx['date_start'])} and ${format_date(ctx['date_end'])}.\n"
+"        <br/><br/>\n"
+"        If you have any question, do not hesitate to contact us.\n"
+"        <br/><br/>\n"
+"        Regards,\n"
+"        % if user.signature:\n"
+"            <br/>\n"
+"            ${user.signature | safe}\n"
+"        % endif\n"
+"    </p>\n"
+"</div>\n"
+"        "
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        Estimado(a) ${object.name},\n"
+"       <br/><br/>\n"
+"        Por favor, encuentre adjunto un extracto de saldo\n"
+"        con fecha entre ${format_date(ctx['date_start'])} y ${format_date(ctx['date_end'])}.\n"
+"       <br/><br/>\n"
+"        Si tiene alguna pregunta, no dude en ponerse en contacto con nosotros.\n"
+"       <br/><br/>\n"
+"        Saludos,\n"
+"        % i f user.signature:\n"
+"           <br/>\n"
+"            ${user.signature | safe}\n"
+"        % e ndif\n"
+"    </p>\n"
+"</div>\n"
+"        "
+
+#. module: partner_statement_send_by_mail
+#: model:mail.template,body_html:partner_statement_send_by_mail.email_template_partner_outstanding_statement
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        Dear ${object.name},\n"
+"        <br/><br/>\n"
+"        Please find attached an outstanding documents statement,\n"
+"        dated ${format_date(ctx['date_end'])}.\n"
+"        <br/><br/>\n"
+"        If you have any question, do not hesitate to contact us.\n"
+"        <br/><br/>\n"
+"        Regards,\n"
+"        % if user.signature:\n"
+"            <br/>\n"
+"            ${user.signature | safe}\n"
+"        % endif\n"
+"    </p>\n"
+"</div>\n"
+"        "
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        Estimado ${object.name},\n"
+"       <br/><br/>\n"
+"        Le adjunto un informe de estado de pendientes de la cuenta,\n"
+"        con fecha ${format_date(ctx['date_end'])}.\n"
+"       <br/><br/>\n"
+"        Si tiene alguna pregunta, no dude en ponerse en contacto con nosotros.\n"
+"       <br/><br/>\n"
+"        Saludos,\n"
+"        % i f user.signature:\n"
+"           <br/>\n"
+"            ${user.signature | safe}\n"
+"        % e ndif\n"
+"    </p>\n"
+"</div>\n"
+"        "
+
+#. module: partner_statement_send_by_mail
+#: model:ir.model,name:partner_statement_send_by_mail.model_activity_statement_wizard
+msgid "Activity Statement Wizard"
+msgstr "Asistente de Estado de la cuenta"
+
+#. module: partner_statement_send_by_mail
+#: model:mail.template,report_name:partner_statement_send_by_mail.email_template_partner_activity_statement
+#: model:mail.template,subject:partner_statement_send_by_mail.email_template_partner_activity_statement
+msgid "Activity statement"
+msgstr "Estado de la cuenta"
+
+#. module: partner_statement_send_by_mail
+#: code:addons/partner_statement_send_by_mail/wizards/activity_statement_wizard.py:0
+#: code:addons/partner_statement_send_by_mail/wizards/outstanding_statement_wizard.py:0
+#, python-format
+msgid "Compose Email"
+msgstr "Escribir email"
+
+#. module: partner_statement_send_by_mail
+#: model:ir.model.fields,field_description:partner_statement_send_by_mail.field_activity_statement_wizard__display_name
+#: model:ir.model.fields,field_description:partner_statement_send_by_mail.field_outstanding_statement_wizard__display_name
+#: model:ir.model.fields,field_description:partner_statement_send_by_mail.field_statement_common_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre a Mostrar"
+
+#. module: partner_statement_send_by_mail
+#: model:ir.model.fields,field_description:partner_statement_send_by_mail.field_activity_statement_wizard__id
+#: model:ir.model.fields,field_description:partner_statement_send_by_mail.field_outstanding_statement_wizard__id
+#: model:ir.model.fields,field_description:partner_statement_send_by_mail.field_statement_common_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: partner_statement_send_by_mail
+#: model:ir.model.fields,field_description:partner_statement_send_by_mail.field_activity_statement_wizard____last_update
+#: model:ir.model.fields,field_description:partner_statement_send_by_mail.field_outstanding_statement_wizard____last_update
+#: model:ir.model.fields,field_description:partner_statement_send_by_mail.field_statement_common_wizard____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: partner_statement_send_by_mail
+#: model:ir.model,name:partner_statement_send_by_mail.model_outstanding_statement_wizard
+msgid "Outstanding Statement Wizard"
+msgstr "Asistente para la Declaración de Pendientes"
+
+#. module: partner_statement_send_by_mail
+#: model:mail.template,subject:partner_statement_send_by_mail.email_template_partner_outstanding_statement
+msgid "Outstanding documents"
+msgstr "Documentos pendientes"
+
+#. module: partner_statement_send_by_mail
+#: model:mail.template,report_name:partner_statement_send_by_mail.email_template_partner_outstanding_statement
+msgid "Outstanding documents statement"
+msgstr "Declaración de documentos pendientes"
+
+#. module: partner_statement_send_by_mail
+#: model_terms:ir.ui.view,arch_db:partner_statement_send_by_mail.statement_common_view
+msgid "Send by Email"
+msgstr "Enviar por Email"
+
+#. module: partner_statement_send_by_mail
+#: model:ir.model,name:partner_statement_send_by_mail.model_statement_common_wizard
+msgid "Statement Reports Common Wizard"
+msgstr "Asistente de Informes de Estados de Cuenta Comunes"
