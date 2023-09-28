@@ -3,7 +3,7 @@
 
 {
     "name": "Partner Statement Send by Email",
-    "version": "14.0.1.0.1",
+    "version": "15.0.1.0.1",
     "license": "AGPL-3",
     "author": "Exo Software, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/account-financial-reporting",
@@ -15,6 +15,6 @@
         "data/partner_mail.xml",
         "wizards/statement_wizard_views.xml",
     ],
-    "installable": True,
+    "installable": False,
     "application": False,
 }
