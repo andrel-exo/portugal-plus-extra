@@ -37,7 +37,7 @@ class SaleOrder(models.Model):
         return domain
 
     def _prepare_invoice(self):
-        invoice_vals = super(SaleOrder, self)._prepare_invoice()
+        invoice_vals = super()._prepare_invoice()
 
         # If there's a pre-filled operating unit, we need to make sure the
         # journal is compatible with the OU

@@ -5,7 +5,7 @@
     "name": "Portugal - Accounting with Operating Units",
     "version": "16.0.4.0.0",
     "author": "Exo Software, " "Odoo Community Association (OCA)",
-    "website": "https://exosoftware.pt",
+    "website": "https://github.com/OCA/web",
     "license": "LGPL-3",
     "category": "Localization",
     "depends": [

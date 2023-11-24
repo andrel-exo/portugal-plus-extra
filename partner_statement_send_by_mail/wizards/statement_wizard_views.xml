@@ -8,11 +8,11 @@
         <field name="arch" type="xml">
             <xpath expr="//button[@name='button_export_pdf']" position="after">
                 <button
-                    name="button_send_mail"
-                    string="Send by Email"
-                    type="object"
-                    class="oe_highlight"
-                />
+          name="button_send_mail"
+          string="Send by Email"
+          type="object"
+          class="oe_highlight"
+        />
             </xpath>
         </field>
     </record>

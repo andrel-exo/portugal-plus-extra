@@ -6,7 +6,7 @@
     "version": "16.0.1.0.1",
     "license": "AGPL-3",
     "author": "Exo Software, Odoo Community Association (OCA)",
-    "website": "https://github.com/OCA/account-financial-reporting",
+    "website": "https://github.com/OCA/web",
     "category": "Accounting & Finance",
     "depends": [
         "partner_statement",

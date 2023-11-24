@@ -15,7 +15,7 @@ class AccountPaymentRegister(models.TransientModel):
     )
 
     def _prepare_payment_vals(self, invoices):
-        vals = super(AccountPaymentRegister, self)._prepare_payment_vals(invoices)
+        vals = super()._prepare_payment_vals(invoices)
         vals.update(
             {
                 "operating_unit_id": self.operating_unit_id,
@@ -26,7 +26,7 @@ class AccountPaymentRegister(models.TransientModel):
     @api.model
     def _get_line_batch_key(self, line):
         # OVERRIDE to set the operating unit
-        vals = super(AccountPaymentRegister, self)._get_line_batch_key(line)
+        vals = super()._get_line_batch_key(line)
         operating_unit_id = (
             line.operating_unit_id and line.operating_unit_id.id or False
         )
@@ -38,7 +38,8 @@ class AccountPaymentRegister(models.TransientModel):
     def _compute_from_lines(self):
         # OVERRIDE to set the operating unit. If there's one and only one
         # operating unit in the moves lines, we'll set it up on the payment
-        super(AccountPaymentRegister, self)._compute_from_lines()
+        # pylint: disable=missing-return
+        super()._compute_from_lines()
         for wizard in self:
             operating_units = []
             for batch in wizard._get_batches():
