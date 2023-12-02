@@ -20,3 +20,9 @@ class ResConfigSettings(models.TransientModel):
         related="company_id.l10n_pt_issuance_blocking_archived",
         readonly=False,
     )
+
+    l10n_pt_issuance_blocking_sale_not_ok = fields.Boolean(
+        string="Doc. Issuance Blocking (Not for Sale)",
+        related="company_id.l10n_pt_issuance_blocking_sale_not_ok",
+        readonly=False,
+    )

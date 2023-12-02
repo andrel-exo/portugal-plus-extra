@@ -3,7 +3,8 @@ Portugal - Issuance Blocking
 ============================
 
 Allows companies to eventually block fiscal document issuance when the related
-partners and/or products are marked as blocked or are archived.
+partners and/or products are marked as blocked, are archived or are not for
+sale (products only).
 
 **Table of contents**
 
@@ -30,8 +31,12 @@ allow normal issuance.
 On the Portuguese Invoicing section of the Accounting settings, find the Doc.
 Issuance Blocking sub-section and activate the Partners/Products checkbox to
 start blocking fiscal document issuance on partners and products that are
-marked as such. If you want to apply the blocking mechanism to archived products
-and/or partners, select the Block Archived checkbox.
+marked as such.
+
+If you want to apply the blocking mechanism to archived products and/or
+partners, select the Block Archived checkbox. If you set the 'Block products
+that are not for sale' checkbox, a similar blocking will be effective on
+products that don't have the 'Can be Sold' option selected.
 
 Usage
 =====
@@ -43,6 +48,13 @@ you won't be allowed to validate it.
 
 Changelog
 =========
+
+1.0.1 (2023-12-04)
+~~~~~~~~~~~~~~~~~~~
+
+**Features**
+
+- Added blocking on products on which the 'Can be Sold' property is false.
 
 1.0.0 (2023-11-21)
 ~~~~~~~~~~~~~~~~~~~

@@ -19,3 +19,8 @@ class ResCompany(models.Model):
         string="Doc. Issuance Blocking (Archived)",
         readonly=False,
     )
+
+    l10n_pt_issuance_blocking_sale_not_ok = fields.Boolean(
+        string="Doc. Issuance Blocking (Not for Sale)",
+        readonly=False,
+    )

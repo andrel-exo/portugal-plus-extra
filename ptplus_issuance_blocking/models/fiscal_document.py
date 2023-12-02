@@ -80,4 +80,16 @@ class FiscalDocument(models.AbstractModel):
                 )
             )
 
+        sale_not_ok = products.filtered(lambda r: not r.sale_ok)
+        if (
+            self.company_id.l10n_pt_issuance_blocking_archived
+            and sale_not_ok
+            and sale_not_ok[0]
+        ):
+            raise UserError(
+                _("Can't issue document. Product '{}' is not for sale.").format(
+                    sale_not_ok[0].name
+                )
+            )
+
         return super().pt_check_lines()

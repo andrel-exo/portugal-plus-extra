@@ -31,8 +31,14 @@
                             <div class="content-group">
                                 <div class="row">
                                     <div class="col-12">
-                                        <label for="l10n_pt_issuance_blocking_archived" class="p-0 col-6 o_light_label" string="Also block archived records"/>
+                                        <label for="l10n_pt_issuance_blocking_archived" class="p-0 col-6 o_light_label" string="Block archived records"/>
                                         <field name="l10n_pt_issuance_blocking_archived" class="w-auto" nolabel="1"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="l10n_pt_issuance_blocking_sale_not_ok" class="p-0 col-6 o_light_label" string="Block products that are not for sale"/>
+                                        <field name="l10n_pt_issuance_blocking_sale_not_ok" class="w-auto" nolabel="1"/>
                                     </div>
                                 </div>
                             </div>
