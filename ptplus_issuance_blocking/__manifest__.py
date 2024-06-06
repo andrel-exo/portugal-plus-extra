@@ -7,7 +7,7 @@
 
 {
     "name": "Portugal - Issuance Blocking",
-    "version": "16.0.1.0.1",
+    "version": "17.0.1.0.1",
     "license": "OPL-1",
     "author": "Exo Software",
     "website": "https://exosoftware.pt",

@@ -11,7 +11,7 @@
                 expr="//page[@name='sales_purchases']//field[@name='user_id']"
                 position="after"
             >
-                <field name="l10n_pt_issuance_blocking" attrs="{'invisible': [('country_code', '!=', 'PT')]}"/>
+                <field name="l10n_pt_issuance_blocking" invisible="country_code != 'PT'" />
             </xpath>
         </field>
     </record>
